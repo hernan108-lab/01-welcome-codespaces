@@ -4,20 +4,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Student Welcome</title>
+  <title>My Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome, Student
-    </h1>
-    <form id="nameForm">
-      <input type="text" id="studentName" placeholder="Enter your name" required>
-      <button type="submit">Continue</button>
-    </form>
-    <div id="greeting" class="hidden"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">My Portfolio</h2>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 id="heroTitle">Hello! I'm <span class="highlight">Carlos Hernandez Gonzalez</span></h1>
+      <p class="tagline">A senior Economics and Sociology student at Rowan University in NJ with a passion for developing</p>
+      <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">View My Work</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p id="aboutText"> Hello! I am a senior Economics and Sociology student at Rowan University, I've always had a passion for technology and problem-solving. I enjoy creating innovative solutions and learning new skills. In my free time, I love being outdoors, learning new things, working on personal projects, and collaborating with others in my community, wether it is in tech, social work, or home projects, im in!
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">HTML</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto; color: #555;">
+        I’m currently building new projects and will share them here soon. Stay tuned for updates!
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out! I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:hernan108@students.rowan.edu" class="contact-link">📧 Email</a>
+        <a href="https://www.linkedin.com/in/carlos-hernandez-gonzalez-347725235/" class="contact-link" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/hernan108-lab" class="contact-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
